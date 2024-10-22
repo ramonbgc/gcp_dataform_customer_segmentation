@@ -1,6 +1,7 @@
 config {
   type: 'operations',
-  hasOutput: true
+  hasOutput: true,
+  tags: ["model_creation"]
 }
 
 CREATE OR REPLACE MODEL M2C_data_raw.customer_segmentation_v2

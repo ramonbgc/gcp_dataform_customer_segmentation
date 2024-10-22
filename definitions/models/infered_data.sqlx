@@ -1,0 +1,13 @@
+config {
+  type: 'table',
+  dependencies: ["model_creation"]
+}
+
+SELECT *
+FROM ML.PREDICT(
+    MODEL `prj-d2-data-poc-vivo.M2C_data_raw.customer_segmentation_v2`,
+    (
+        SELECT *
+        FROM ${ref('navigation_data')}
+    )
+)

@@ -1,0 +1,6 @@
+config {
+    type: "declaration",
+    database: "prj-d2-data-poc-vivo",
+    schema: "M2C_data_raw",
+    name: "navigation"
+}

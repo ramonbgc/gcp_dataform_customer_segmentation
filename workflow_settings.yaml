@@ -1,0 +1,5 @@
+defaultProject: prj-d2-data-poc-vivo
+defaultLocation: southamerica-east1
+defaultDataset: M2C_data_raw
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.0

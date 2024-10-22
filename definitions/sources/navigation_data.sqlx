@@ -1,0 +1,9 @@
+config {
+  type: 'view',
+  dependencies: ["model_creation"]
+}
+SELECT
+    REGEXP_REPLACE(ds_sbpt, '[^a-zA-Z]', '') as interest, nr_tlfn as msisdn, 
+    AVG(DATE_DIFF(dt_fim_nvgc, dt_ini_nvgc, SECOND)) * COUNT(*) as weight -- a measure of the interest: number of session X time in every session
+FROM ${ref("navigation")}
+GROUP BY msisdn, interest

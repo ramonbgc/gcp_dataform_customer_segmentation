@@ -5,7 +5,7 @@ config {
 
 SELECT *
 FROM ML.PREDICT(
-    MODEL `prj-poc-vivobr.ds_tlfn_poc.segmentation_sessions_one_hot`,
+    MODEL `prj-d2-data-poc-vivo.M2C_data_raw.customer_segmentation_v2`,
     (
         SELECT *
         FROM ${ref('navigation_data')}

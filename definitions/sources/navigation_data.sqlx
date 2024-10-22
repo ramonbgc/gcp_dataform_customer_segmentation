@@ -1,6 +1,5 @@
 config {
-  type: 'view',
-  dependencies: ["model_creation"]
+  type: 'view'
 }
 SELECT
     REGEXP_REPLACE(ds_sbpt, '[^a-zA-Z]', '') as interest, nr_tlfn as msisdn, 
